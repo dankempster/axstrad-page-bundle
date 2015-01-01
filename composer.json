@@ -1,5 +1,5 @@
 {
-    "name": "axstrad/browser-sync-bundle",
+    "name": "axstrad/page-bundle",
     "description": "Simple (crude would be another word) Page bundle for Symfony 2",
     "type": "symfony-bundle",
     "keywords": ["axstrad", "webpage"],

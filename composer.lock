@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6848c49145072892b9e03ac6fe46380e",
+    "hash": "6179477a5e3c6b5f8d0fe1523ccc9751",
     "packages": [
         {
             "name": "axstrad/common",
