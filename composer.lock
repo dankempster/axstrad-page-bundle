@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b795c3bde14b06329b86b46d7adc3e98",
+    "hash": "740de41d3ea575e91dd379024dc2efdf",
     "packages": [
         {
             "name": "axstrad/common",
@@ -3396,7 +3396,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "burgov/key-value-form-bundle": 20,
         "satooshi/php-coveralls": 20
     },
     "prefer-stable": true,
