@@ -39,7 +39,7 @@ doctrine:
         mappings:
             axstrad_content: # Required by AxstradPageBundle
                 type: yml
-                prefix: Axstrad\Component\Content\Orm
+                prefix: Axstrad\Component\Content\Entity
                 dir: "%kernel.root_dir%/../vendor/axstrad/content/config/Orm"
                 alias: AxstradContent
                 is_bundle: false

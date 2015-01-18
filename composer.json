@@ -14,7 +14,7 @@
 
     "require": {
         "php": ">=5.4",
-        "axstrad/content": "~0.1.0",
+        "axstrad/content": "~0.3.0",
         "axstrad/doctrine-extensions-bundle": "~0.1.0",
         "axstrad/seo-bundle": "~0.1.0",
         "doctrine/orm": "~2.3",

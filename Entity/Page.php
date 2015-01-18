@@ -13,7 +13,7 @@
 namespace Axstrad\Bundle\PageBundle\Entity;
 
 use Axstrad\DoctrineExtensions\Activatable\ActivatableTrait;
-use Axstrad\Component\Content\Orm\Article;
+use Axstrad\Component\Content\Entity\Article;
 use Axstrad\DoctrineExtensions\Sluggable\SluggableTrait;
 use Symfony\Cmf\Bundle\SeoBundle\SeoAwareTrait;
 use Symfony\Cmf\Bundle\SeoBundle\SeoAwareInterface;
