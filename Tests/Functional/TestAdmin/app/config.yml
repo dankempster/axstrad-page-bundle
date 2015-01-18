@@ -11,6 +11,7 @@ framework:
     form:            true
     default_locale:  "%locale%"
     templating:      { engines: ['twig'] }
+    translator: ~
 
 security:
     encoders:
@@ -68,7 +69,7 @@ doctrine:
         mappings:
             axstrad_content:
                 type: yml
-                prefix: Axstrad\Component\Content\Orm
+                prefix: Axstrad\Component\Content\Entity
                 dir: "%kernel.root_dir%/../../../../vendor/axstrad/content/config/Orm"
                 alias: AxstradContent
                 is_bundle: false

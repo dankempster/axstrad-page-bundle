@@ -37,16 +37,10 @@ doctrine:
     orm:
         # ...other orm config...
         mappings:
-            axstrad_page: # Required by AxstradPageBundle
+            axstrad_content: # Required by AxstradPageBundle
                 type: yml
-                prefix: Axstrad\Component\Page\Entity
-                dir: "%kernel.root_dir%/../vendor/axstrad/axstrad/src/Axstrad/Component/Page/config/Orm"
-                alias: AxstradContent
-                is_bundle: false
-            axstrad_content: # Required by axstrad_page
-                type: yml
-                prefix: Axstrad\Component\Content\Orm
-                dir: "%kernel.root_dir%/../vendor/axstrad/axstrad/src/Axstrad/Component/Content/config/Orm"
+                prefix: Axstrad\Component\Content\Entity
+                dir: "%kernel.root_dir%/../vendor/axstrad/content/config/Orm"
                 alias: AxstradContent
                 is_bundle: false
             CmfSeoBundle: # Required by AxstradSeoBundle

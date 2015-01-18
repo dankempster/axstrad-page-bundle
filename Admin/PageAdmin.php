@@ -86,7 +86,7 @@ class PageAdmin extends Admin
     private function preChange($page)
     {
         $seoMetadata = $page->getSeoMetadata();
-        if (!empty($seoMetadata)) {
+        if ( ! empty($seoMetadata)) {
             $this->om->persist($seoMetadata);
         }
     }
