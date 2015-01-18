@@ -3,7 +3,7 @@
     "description": "Simple (crude would be another word) Page bundle for Symfony 2",
     "type": "symfony-bundle",
     "keywords": ["axstrad", "webpage"],
-    "license": "GPL-2.0",
+    "license": "MIT",
     "authors": [
         {
             "name": "Dan Kempster",
