@@ -12,7 +12,7 @@
 
 namespace Axstrad\Bundle\PageBundle\Tests\Functional\TestPageExtension\Entity;
 
-use Axstrad\Bundle\PageBundle\Entity\Page;
+use Axstrad\Bundle\PageBundle\Entity\BasePage;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -25,7 +25,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Entity
  * @ORM\Table(name="testPageExt_event")
  */
-class Event extends Page
+class Event extends BasePage
 {
     /**
      * @ORM\Column(type="date", nullable=true)

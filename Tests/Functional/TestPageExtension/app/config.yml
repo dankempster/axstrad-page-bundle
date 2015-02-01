@@ -26,27 +26,22 @@ doctrine:
         charset:  UTF8
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        metadata_cache_driver: array
-        query_cache_driver: array
-        result_cache_driver: array
-        auto_mapping: true
-        mappings:
-            CmfSeoBundle:
-                type: xml
-                prefix: Symfony\Cmf\Bundle\SeoBundle\Model
-                dir: Resources/config/doctrine-model
-                alias: CmfSeo
-        filters:
-            activatable:
-                class:   Axstrad\DoctrineExtensions\Activatable\Filter\OrmFilter
-                enabled: true
-        # mappings:
-        #     AxstradHttpFileUploadBundle:
-        #         type: yml
-        #         dir: Entity/
-        #     AxstradTestHttpFileUploadBundle:
-        #         type: annotation
-        #         dir: Entity/
+        entity_managers:
+            default:
+                metadata_cache_driver: array
+                query_cache_driver: array
+                result_cache_driver: array
+                auto_mapping: true
+                filters:
+                    activatable:
+                        class:   Axstrad\DoctrineExtensions\Activatable\Filter\OrmFilter
+                        enabled: true
+                mappings:
+                    CmfSeoBundle:
+                        type: xml
+                        prefix: Symfony\Cmf\Bundle\SeoBundle\Model
+                        dir: Resources/config/doctrine-model
+                        alias: CmfSeo
 
 axstrad_doctrine_extensions:
     orm:
