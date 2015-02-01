@@ -74,7 +74,8 @@ class DefaultControllerTest extends WebTestCase
     {
         $this->assertEquals(
             'A page about us.',
-            $this->crawler->filter('p')->text()
+            $this->crawler->filter('p')->text(),
+            "The 'about us' copy was not found on the page"
         );
     }
 }

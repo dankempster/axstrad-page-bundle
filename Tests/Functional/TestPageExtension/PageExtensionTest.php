@@ -50,7 +50,8 @@ class PageExtensionTest extends WebTestCase
     public function testPageIsSuccessful()
     {
         $this->assertTrue(
-            $this->response->isSuccessful()
+            $this->response->isSuccessful(),
+            "The page did not load successfully. Status code ".$this->response->getStatusCode()
         );
     }
 

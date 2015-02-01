@@ -54,7 +54,11 @@ class PageAdminTest extends WebTestCase
         $crawler = $this->client->request('GET', '/admin/axstrad/page/page/1/edit');
         $res = $this->client->getResponse();
         $this->assertEquals(200, $res->getStatusCode());
-        $this->assertCount(1, $crawler->filter('input[value="about-us"]'));
+        $this->assertCount(
+            1,
+            $crawler->filter('input[value="about-us"]'),
+            "There is no input field with the value \'about-us\'"
+        );
     }
 
     public function testContentCreate()

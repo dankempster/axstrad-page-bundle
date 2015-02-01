@@ -51,23 +51,39 @@ class SeoDataTest extends WebTestCase
     {
         $this->assertEquals(
             'About Us | AxstradTestPageBundle',
-            $this->crawler->filter('title')->text()
+            $this->crawler->filter('title')->text(),
+            "Page <title> doesn't match expected value"
         );
     }
 
     public function testPageHasMetaKeywords()
     {
+        $keywords = $this->crawler->filter('meta[name="keywords"]');
+        $this->assertGreaterThan(
+            0,
+            $keywords->count(),
+            'No <meta name="keywords"/> was found on the page, one was expected!'
+        );
+
         $this->assertEquals(
             'about, us',
-            $this->crawler->filter('meta[name="keywords"]')->attr('content')
+            $keywords->attr('content'),
+            '<meta name="keywords"/> content does not match expected'
         );
     }
 
     public function testPageHasMetaDescription()
     {
+        $description = $this->crawler->filter('meta[name="description"]');
+        $this->assertGreaterThan(
+            0,
+            $description->count(),
+            'No <meta name="description"/> was found on the page, one was expected!'
+        );
+
         $this->assertEquals(
             'Meta description about us.',
-            $this->crawler->filter('meta[name="description"]')->attr('content')
+            $description->attr('content')
         );
     }
 }
