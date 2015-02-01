@@ -12,11 +12,7 @@
 
 namespace Axstrad\Bundle\PageBundle\Entity;
 
-use Axstrad\DoctrineExtensions\Activatable\ActivatableTrait;
-use Axstrad\Component\Content\Entity\Article;
-use Axstrad\DoctrineExtensions\Sluggable\SluggableTrait;
-use Symfony\Cmf\Bundle\SeoBundle\SeoAwareTrait;
-use Symfony\Cmf\Bundle\SeoBundle\SeoAwareInterface;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * Axstrad\Bundle\PageBundle\Entity\Page
@@ -25,12 +21,11 @@ use Symfony\Cmf\Bundle\SeoBundle\SeoAwareInterface;
  * @license MIT
  * @package Axstrad/PageBundle
  * @subpackage ORM
+ * @ORM\Entity
+ * @ORM\Table(name="axstrad_page")
  */
-class Page extends Article implements
-    SeoAwareInterface
+class Page extends BasePage
 {
-    use ActivatableTrait;
-    use SeoAwareTrait;
-    use SluggableTrait;
+
 }
 

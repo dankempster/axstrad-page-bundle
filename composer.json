@@ -14,9 +14,10 @@
 
     "require": {
         "php": ">=5.4",
-        "axstrad/content": "~0.3.0",
-        "axstrad/doctrine-extensions-bundle": "~0.1.0",
-        "axstrad/seo-bundle": "~0.1.0",
+        "axstrad/common": ">=0.2.x-dev",
+        "axstrad/content": "0.4.x-dev",
+        "axstrad/doctrine-extensions-bundle": ">=0.2.x-dev",
+        "axstrad/seo-bundle": ">=0.1.x-dev",
         "doctrine/orm": "~2.3",
         "doctrine/doctrine-bundle": "~1.2",
         "stof/doctrine-extensions-bundle": "~1.1",
@@ -24,8 +25,8 @@
     },
 
     "require-dev": {
-        "axstrad/test": "~0.1.0",
-        "axstrad/test-bundle": "~0.1.0",
+        "axstrad/test": ">=0.1.x-dev",
+        "axstrad/test-bundle": ">=0.1.x-dev",
         "burgov/key-value-form-bundle": "~1.1",
         "doctrine/doctrine-fixtures-bundle": "~2.2.0",
         "phpunit/phpunit": "~4.1",
