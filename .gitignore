@@ -7,3 +7,8 @@ cache.properties
 build/
 !build/php*.xml
 
+.idea/workspace.xml
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+
