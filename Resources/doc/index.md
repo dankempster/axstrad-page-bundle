@@ -18,6 +18,7 @@ $bundles = array(
     // requires
     new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
     new \Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
+    new \Axstrad\Bundle\ExtraFrameworkBundle\AxstradExtraFrameworkBundle(),
     new \Sonata\SeoBundle\SonataSeoBundle(),
     new \Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
     new \Axstrad\Bundle\SeoBundle\AxstradSeoBundle(),

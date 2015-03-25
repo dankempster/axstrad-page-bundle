@@ -48,6 +48,7 @@ class AppKernel extends AbstractAxstradKernel
             // AxstradPageBundle and it's dependencies
             new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new \Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
+            new \Axstrad\Bundle\ExtraFrameworkBundle\AxstradExtraFrameworkBundle(),
             new \Sonata\SeoBundle\SonataSeoBundle(),
             new \Symfony\Cmf\Bundle\SeoBundle\CmfSeoBundle(),
             new \Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),

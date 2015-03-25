@@ -28,7 +28,7 @@ use Symfony\Component\HttpFoundation\Response;
 class DefaultController extends Controller
 {
     /**
-     * @ParamConverter("page")
+     * @ParamConverter("page", class="%axstrad_page.entity.page.class%")
      * @SeoPageData
      */
     public function indexAction(Page $page)

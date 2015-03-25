@@ -1,0 +1,2 @@
+parameters:
+    axstrad_page.entity.page.class: Axstrad\Bundle\PageBundle\Entity\Page

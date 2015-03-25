@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Entity" isTestSource="false" packagePrefix="Axstrad\Bundle\PageBundle\Entity" />
       <sourceFolder url="file://$MODULE_DIR$/Tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/Exception" isTestSource="false" packagePrefix="Axstrad\Bundle\PageBundle\Exception" />
+      <sourceFolder url="file://$MODULE_DIR$/vendor" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -54,6 +54,7 @@ class AppKernel extends AbstractAxstradKernel
             // Axstrad Bundles
             new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new \Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
+            new \Axstrad\Bundle\ExtraFrameworkBundle\AxstradExtraFrameworkBundle(),
             new \Axstrad\Bundle\PageBundle\AxstradPageBundle(),
             new \Axstrad\Bundle\PageBundle\Tests\Functional\TestPage\AxstradTestPageBundle(),
         );

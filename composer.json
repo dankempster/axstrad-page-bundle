@@ -18,6 +18,7 @@
         "axstrad/content": "0.4.x-dev",
         "axstrad/doctrine-extensions-bundle": ">=0.2.x-dev",
         "axstrad/doctrine-extensions": "0.2.*",
+        "axstrad/extra-framework-bundle": "dev-develop@dev",
         "axstrad/seo-bundle": ">=0.1.x-dev",
         "doctrine/orm": "~2.3",
         "doctrine/doctrine-bundle": "~1.2",
