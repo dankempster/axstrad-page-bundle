@@ -25,6 +25,9 @@ use Axstrad\Bundle\TestBundle\Functional\WebTestCase;
  */
 class PageEntityTest extends WebTestCase
 {
+    /**
+     * @var \Doctrine\ORM\EntityManager
+     */
     protected $em;
 
     protected $repo;

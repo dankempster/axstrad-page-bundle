@@ -22,6 +22,11 @@ use Axstrad\Bundle\PageBundle\Entity\Page;
  */
 class PageTest extends \PHPUnit_Framework_TestCase
 {
+    /**
+     * @var Page
+     */
+    protected $fixture;
+
     public function setUp()
     {
         $this->fixture = new Page;
@@ -32,7 +37,7 @@ class PageTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(
             $this->fixture,
             $this->fixture->setHeading('heading'),
-            'setHeading() doesn\'t return self.'
+            'setHeading() does not return self.'
         );
 
         $this->assertEquals(
@@ -46,7 +51,7 @@ class PageTest extends \PHPUnit_Framework_TestCase
         $this->assertSame(
             $this->fixture,
             $this->fixture->setCopy('copy'),
-            'setCopy() doesn\'t return self.'
+            'setCopy() does not return self.'
         );
 
         $this->assertEquals(

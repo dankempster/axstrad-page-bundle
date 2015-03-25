@@ -45,7 +45,7 @@ class AppKernel extends AbstractAxstradKernel
             new \Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new \Axstrad\Bundle\PageBundle\Tests\Functional\HelperBundle\AxstradPageTestHelperBundle(),
 
-            // AxstradPageBundle and it's dependancies
+            // AxstradPageBundle and it's dependencies
             new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
             new \Axstrad\Bundle\DoctrineExtensionsBundle\AxstradDoctrineExtensionsBundle(),
             new \Sonata\SeoBundle\SonataSeoBundle(),
@@ -53,7 +53,7 @@ class AppKernel extends AbstractAxstradKernel
             new \Burgov\Bundle\KeyValueFormBundle\BurgovKeyValueFormBundle(),
             new \Axstrad\Bundle\SeoBundle\AxstradSeoBundle(),
 
-            // Sonta Admin and it's dependancies (required by AxstradPageBundle)
+            // Sonta Admin and it's dependencies (required by AxstradPageBundle)
             new \Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new \Sonata\CoreBundle\SonataCoreBundle(),
             new \Sonata\BlockBundle\SonataBlockBundle(),

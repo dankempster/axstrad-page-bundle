@@ -22,8 +22,14 @@ use Axstrad\Bundle\TestBundle\Functional\WebTestCase;
  */
 class SeoDataTest extends WebTestCase
 {
+    /**
+     * @var \Symfony\Component\DomCrawler\Crawler
+     */
     protected $crawler;
 
+    /**
+     * @var \Symfony\Component\HttpFoundation\Response
+     */
     protected $response;
 
     /**

@@ -13,6 +13,7 @@
 namespace Axstrad\Bundle\PageBundle\Tests\Functional\TestPageExtension\Entity;
 
 use Axstrad\Bundle\PageBundle\Entity\BasePage;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -29,6 +30,7 @@ class Event extends BasePage
 {
     /**
      * @ORM\Column(type="date", nullable=true)
+     * @var DateTime
      */
     protected $date;
 
@@ -62,11 +64,11 @@ class Event extends BasePage
      */
     public function setDate($date)
     {
-        if ($date instanceof \DateTime) {
+        if ($date instanceof DateTime) {
             $this->date = clone $date;
         }
         else {
-            $this->date = new \DateTime((string) $date);
+            $this->date = new DateTime((string) $date);
         }
 
         return $this;

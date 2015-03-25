@@ -25,6 +25,9 @@ use Axstrad\Bundle\TestBundle\Functional\WebTestCase;
  */
 class PageAdminTest extends WebTestCase
 {
+    /**
+     * @var \Symfony\Bundle\FrameworkBundle\Client
+     */
     protected $client;
 
     public function setUp()
@@ -71,10 +74,10 @@ class PageAdminTest extends WebTestCase
         $form = $button->form();
         $node = $form->getFormNode();
         $actionUrl = $node->getAttribute('action');
-        $uniqId = substr(strchr($actionUrl, '='), 1);
+        $uniqueId = substr(strchr($actionUrl, '='), 1);
 
-        $form[$uniqId.'[heading]'] = 'Create Test';
-        $form[$uniqId.'[copy]'] = '<p>Create copy</p>';
+        $form[$uniqueId.'[heading]'] = 'Create Test';
+        $form[$uniqueId.'[copy]'] = '<p>Create copy</p>';
 
         $this->client->submit($form);
         $res = $this->client->getResponse();
