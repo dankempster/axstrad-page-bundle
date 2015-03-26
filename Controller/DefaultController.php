@@ -12,7 +12,7 @@
 
 namespace Axstrad\Bundle\PageBundle\Controller;
 
-use Axstrad\Bundle\PageBundle\Entity\Page;
+use Axstrad\Bundle\PageBundle\Entity\BasePage as Page;
 use Axstrad\Bundle\SeoBundle\Configuration\SeoPageData;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
